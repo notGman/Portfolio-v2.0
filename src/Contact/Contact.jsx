@@ -2,7 +2,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import { FaPhone } from "react-icons/fa6";
+import { MdOutlinePhone } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="border-2 border-black dark:border-white w-fit p-3 rounded-full">
-                <FaPhone className="text-3xl" />
+                <MdOutlinePhone className="text-3xl" />
               </div>
               <div className="flex flex-col">
                 <div className="font-bold text-[#147efb] ">Phone</div>
