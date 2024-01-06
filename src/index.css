@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-bg-dark1: #100C08;
+  --clr-bg-dark2: #1B1B1B;
+  --clr-bg-light1: #ffffff; 
+  --clr-bg-light2: #f9f9f9; 
+
+  --clr-text-dark1: #fafafa;
+  --clr-text-dark2: #E6E6E6;
+  --clr-text-light1: #000000; 
+  --clr-text-light2: #5f5f5f;
+  --clr-text-light3:#147efb;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
