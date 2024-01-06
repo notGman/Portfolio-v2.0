@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="lg:w-7/12 lg:h-2/3 flex flex-col lg:flex-col lg:gap-8 md:p-5">
+      <div className="lg:w-7/12 lg:h-2/3 flex flex-col lg:flex-col lg:gap-8 md:p-5 mt-8 md:mt-0">
         <div className="uppercase text-xl font-bold text-[#147efb] mb-3 mx-auto md:mx-0 lg:pl-14">
           experience
         </div>
