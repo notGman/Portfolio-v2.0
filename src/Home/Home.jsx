@@ -70,7 +70,7 @@ const Home = () => {
         <div className="mt-5 mb-28 md:mt-5 md:px-5 lg:text-lg flex flex-col md:flex-row items-center gap-5 md:gap-10">
           <div className="flex flex-col">
             <div>Tech Stack {window.screen.width > 500 && "|"}</div>
-            {window.screen.width < 348 && (
+            {window.screen.width < 760 && (
               <div className="w-full bg-black h-[2px]" />
             )}
           </div>
