@@ -3,11 +3,17 @@ import { IoClose } from "react-icons/io5";
 import { FaToggleOff } from "react-icons/fa6";
 import { FaToggleOn } from "react-icons/fa6";
 import "./Navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [showNav, setShowNav] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("darkmode") === "true") {
+      setDarkMode(true);
+      document.getElementById("mainapp").classList.add("dark");
+    }
+  }, []);
 
   const showMobileNav = () => {
     setShowNav(!showNav);
@@ -20,6 +26,7 @@ const Navbar = () => {
     const nav = document.getElementById("mainapp");
     nav.classList.toggle("dark");
   };
+
   return (
     <>
       <div className="h-16 md:h-20 bg-opacity-25 backdrop-filter backdrop-blur-lg text-black dark:text-white text-xl w-screen shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
@@ -39,10 +46,24 @@ const Navbar = () => {
                   <FaToggleOn className="dark:text-[var(--clr-text-light3)]" />
                 )}
               </div>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+              <a href="#home" className="hover:text-[var(--clr-text-light3)]">
+                Home
+              </a>
+              <a href="#about" className="hover:text-[var(--clr-text-light3)]">
+                About
+              </a>
+              <a
+                href="#projects"
+                className="hover:text-[var(--clr-text-light3)]"
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="hover:text-[var(--clr-text-light3)]"
+              >
+                Contact
+              </a>
             </div>
             {!showNav ? (
               <IoMenu onClick={showMobileNav} className="md:hidden text-3xl" />
@@ -57,7 +78,9 @@ const Navbar = () => {
           className="p-8 flex flex-col h-full items-center pt-40 gap-10"
           onClick={showMobileNav}
         >
-          <a href="#home">Home</a>
+          <a href="#home" className="hover:text-[var(--clr-text-light3)]">
+            Home
+          </a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>

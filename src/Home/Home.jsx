@@ -25,28 +25,42 @@ const Home = () => {
             <div className="my-5 md:my-10 lg:text-lg text-[var(--clr-text-light2)] dark:text-[var(--clr-text-dark2)]">
               A passionate Full Stack Web Developer based in India.📍
             </div>
-            <div className="flex text-2xl gap-5 justify-center md:justify-start dark:text-[var(--clr-text-dark1)] dark:text-[var(--clr-text-light3)] font-bold">
+            <div className="flex flex-col md:flex-row text-2xl gap-5  justify-center items-center md:justify-start font-bold">
               <a
-                href="https://github.com/notGman"
+                href="https://drive.google.com/file/d/1brQzfdl5Tn_X6WseM7CbXWdA1mgLOcnB/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FiGithub />
+                <div className="border-2 border-[var(--clr-text-light3)] text-sm md:text-[20px] text-[var(--clr-text-light3)] py-2 px-3 rounded-full cursor-pointer hover:bg-[var(--clr-text-light3)] hover:text-white transition duration-200">
+                  Resume
+                </div>
               </a>
-              <a
-                href="https://www.linkedin.com/in/gowthamanu/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="https://www.instagram.com/not._.gman/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsInstagram />
-              </a>
+              <div className="flex gap-5 ">
+                <a
+                  href="https://github.com/notGman"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[var(--clr-text-light3)]"
+                >
+                  <FiGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gowthamanu/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[var(--clr-text-light3)]"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="https://www.instagram.com/not._.gman/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[var(--clr-text-light3)]"
+                >
+                  <BsInstagram />
+                </a>
+              </div>
             </div>
           </div>
           <div className="p-5 mt-20 md:mt-0">

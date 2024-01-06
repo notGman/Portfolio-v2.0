@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className="bg-[var(--clr-bg-light2)] dark:bg-[var(--clr-bg-dark2)] text-[var(--clr-text-light1)] dark:text-[var(--clr-text-dark1)] flex justify-center items-center p-5 md:p-0">
       <div className="lg:w-7/12 lg:h-2/3 py-10 lg:py-28 md:px-5">
-        <div className="uppercase text-md font-bold text-[#147efb] mb-3"id="projects">
+        <div className="uppercase text-xl font-bold text-[#147efb] mb-3"id="projects">
           Projects
         </div>
         <div className="text-2xl font-bold mb-3">
@@ -27,11 +27,8 @@ const Portfolio = () => {
               </div>
               <div className="lg:w-2/5 p-5 text-center my-auto px-10">
                 <div className="mb-5 text-lg md:text-xl font-bold">{project.title}</div>
-                <div className="text-sm md:text-md lg:text-lg text-[var(--clr-text-light2)] dark:text-[var(--clr-text-dark2)]">
-                  A car rental website is an online platform that allows users
-                  to rent cars for personal or business use. The website
-                  provides an interface for searching, comparing, and reserving
-                  cars.
+                <div className="text-sm md:text-md text-[var(--clr-text-light2)] dark:text-[var(--clr-text-dark2)]">
+                  {project.description}
                 </div>
                 <div className="flex gap-8 justify-center mt-5">
                   {project.techStack.map((tech, index) => (
@@ -45,7 +42,7 @@ const Portfolio = () => {
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex justify-center items-center mt-6 text-md md:text-lg gap-1 w-fit mx-auto dark:text-[var(--clr-text-light3)] font-bold"
+                    className="flex justify-center items-center mt-6 text-md md:text-lg gap-1 w-fit mx-auto text-[var(--clr-text-light3)] font-bold"
                   >
                     visit
                     <PiArrowSquareOutBold />

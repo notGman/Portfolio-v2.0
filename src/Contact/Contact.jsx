@@ -11,7 +11,7 @@ const Contact = () => {
         id="contact"
       >
         <div className="lg:w-7/12 lg:h-2/3 py-10 lg:py-28">
-          <div className="uppercase text-sm font-bold text-[#147efb] mb-3">
+          <div className="uppercase text-xl font-bold text-[#147efb] mb-3">
             contact
           </div>
           <div className="text-xl font-bold mb-3">
@@ -42,13 +42,19 @@ const Contact = () => {
       <div className="bg-[#2D2E32] dark:bg-[var(--clr-bg-dark1)] h-24 flex text-center justify-evenly items-center text-sm md:text-lg text-white font-bold">
         <div>Copyright © 2024. All rights are reserved</div>
         <div className="md:flex gap-8 hidden dark:text-[var(--clr-text-light3)]">
-          <a href="https://github.com/notGman" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/notGman"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-[var(--clr-text-light3)]"
+          >
             <FiGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/gowthamanu/"
             target="_blank"
             rel="noreferrer"
+            className="hover:text-[var(--clr-text-light3)]"
           >
             <FaLinkedinIn />
           </a>
@@ -56,6 +62,7 @@ const Contact = () => {
             href="https://www.instagram.com/not._.gman/"
             target="_blank"
             rel="noreferrer"
+            className="hover:text-[var(--clr-text-light3)]"
           >
             <BsInstagram />
           </a>
