@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
-      <div className="h-10 md:h-20 bg-opacity-25 backdrop-filter backdrop-blur-lg text-black dark:text-white text-xl w-screen shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+      <div className="h-14 md:h-20 bg-opacity-25 backdrop-filter backdrop-blur-lg text-black dark:text-white text-xl w-screen shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
         <div className="flex justify-between items-center h-full px-10 md:px-20">
           <div className="text-sm md:text-lg lg:text-xl font-bold text-[var(--clr-text-light3)]">
             Gman.Dev
