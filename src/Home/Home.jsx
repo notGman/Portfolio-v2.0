@@ -64,7 +64,7 @@ const Home = () => {
             </div>
           </div>
           <div className="p-5 mt-20 md:mt-0">
-            <div className="w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 border-2 border-black dark:border-[var(--clr-text-light3)] overflow-hidden shape mt-10"></div>
+            <div className="w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 border-2 border-black dark:border-[var(--clr-text-light3)] overflow-hidden shape mt-10 md:mt-0"></div>
           </div>
         </div>
         <div className="mt-5 mb-28 md:mt-5 md:px-5 lg:text-lg flex flex-col md:flex-row items-center gap-5 md:gap-10">
