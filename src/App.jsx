@@ -22,8 +22,6 @@ const App = () => {
     });
   });
 
-  console.log(scroll);
-
   return (
     <div id="mainapp" className="font-Poppins">
       <div className="fixed z-50">
