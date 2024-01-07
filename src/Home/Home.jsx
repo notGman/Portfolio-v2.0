@@ -14,7 +14,7 @@ const Home = () => {
           <div className="md:px-5">
             <div className="text-3xl md:text-5xl lg:text-7xl font-bold mb-5 md:mb-10">
               <div>
-                Full Stack{" "}
+                Full-Stack{" "}
                 <span className="dark:text-[var(--clr-text-light3)]">Web</span>
               </div>
               <div className="flex justify-center md:justify-start">
@@ -69,7 +69,7 @@ const Home = () => {
         </div>
         <div className="mt-5 mb-28 md:mt-5 md:px-5 lg:text-lg flex flex-col md:flex-row items-center gap-5 md:gap-10">
           <div className="flex flex-col">
-            <div>Tech Stack {window.screen.width > 500 && "|"}</div>
+            <div className="text-sm md:text-base mt-5">Tech Stack {window.screen.width > 500 && "|"}</div>
             {window.screen.width < 760 && (
               <div className="w-full bg-black h-[2px]" />
             )}
@@ -78,25 +78,25 @@ const Home = () => {
             <img
               src="https://skillicons.dev/icons?i=html,css"
               alt=""
-              className="w-20 md:w-28 lg:32"
+              className="w-20 md:w-28 lg:32 transition duration-200 hover:-translate-y-2"
               title="HTML & CSS"
             />
             <img
               src="https://skillicons.dev/icons?i=js,ts"
               alt=""
-              className="w-20 md:w-28 lg:32"
+              className="w-20 md:w-28 lg:32 transition duration-200 hover:-translate-y-2"
               title="JavaScript & TypeScript"
             />
             <img
               src="https://skillicons.dev/icons?i=react,next"
               alt=""
-              className="w-20 md:w-28 lg:32"
+              className="w-20 md:w-28 lg:32 transition duration-200 hover:-translate-y-2"
               title="React.Js & Next.Js"
             />
             <img
               src="https://skillicons.dev/icons?i=nodejs,flask"
               alt=""
-              className="w-20 md:w-28 lg:32"
+              className="w-20 md:w-28 lg:32 transition duration-200 hover:-translate-y-2"
               title="Node.Js & Flask"
             />
           </div>

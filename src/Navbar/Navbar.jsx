@@ -8,12 +8,18 @@ import { useEffect, useState } from "react";
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [showNav, setShowNav] = useState(false);
 
+  console.log(scrollY);
+
   useEffect(() => {
     if (localStorage.getItem("darkmode") === "true") {
       setDarkMode(true);
       document.getElementById("mainapp").classList.add("dark");
     }
   }, []);
+
+  useEffect(()=>{
+    console.log(window.scrollY);
+  },)
 
   const showMobileNav = () => {
     setShowNav(!showNav);
