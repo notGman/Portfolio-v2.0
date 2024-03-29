@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div id="mainapp" className="font-Poppins">
-      <div className="fixed z-50">
+      <div className="fixed z-10">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       {/* {window.screen.width > 748 && (
@@ -38,11 +38,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       {window.screen.width > 748 && (
-        <div
-          id="scrollbutton"
-          className="hidden transition duration-200"
-          onClick={() => window.scrollTo(0, 0)}
-        >
+        <div id="scrollbutton" className="hidden transition duration-200" onClick={() => window.scrollTo(0, 0)}>
           <ScrollUp />
         </div>
       )}

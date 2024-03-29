@@ -19,6 +19,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     setShowNav(!showNav);
     const nav = document.querySelector(".nav-container");
     nav.classList.toggle("-translate-x-[100%]");
+    const resume = document.getElementById("resume");
+    resume.classList.toggle("z-50");
   };
   const darkmode = () => {
     setDarkMode(!darkMode);
