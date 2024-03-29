@@ -23,7 +23,7 @@ const Home = () => {
             </div>
             <div className="my-5 md:my-10 lg:text-lg text-[var(--clr-text-light2)] dark:text-[var(--clr-text-dark2)]">A passionate Full Stack Web Developer based in India.📍</div>
             <div className="flex flex-col md:flex-row text-2xl gap-5 justify-center items-center md:justify-start font-bold">
-              <a href="https://drive.google.com/file/d/1c6NOmxgP84oPQHrPNS_TYOuQ4RqbeQGv/view?usp=sharing" className="z-50" target="_blank" rel="noreferrer" id="resume">
+              <a href="https://drive.google.com/file/d/1DQ-sqSK1BhjKwY0cYoJ-PDWz-5SKJWuN/view" className="z-50" target="_blank" rel="noreferrer" id="resume">
                 <div className="border-2 border-[var(--clr-text-light3)] text-sm md:text-[20px] text-[var(--clr-text-light3)] py-2 px-3 rounded-full cursor-pointer hover:bg-[var(--clr-text-light3)] hover:text-white transition duration-200">
                   Resume
                 </div>
